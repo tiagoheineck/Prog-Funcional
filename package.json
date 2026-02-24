@@ -1,0 +1,9 @@
+{
+  "name": "prog-funcional",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exemplos de programação funcional e imperativa em JavaScript",
+  "scripts": {
+    "start": "node exemplos/imperativa.js"
+  }
+}

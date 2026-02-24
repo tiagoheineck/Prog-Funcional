@@ -1,0 +1,16 @@
+{
+  "name": "prog-funcional",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "js-cli",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "sh"
+      }
+    }
+  }
+}

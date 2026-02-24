@@ -1,0 +1,8 @@
+services:
+  js-cli:
+    build: .
+    container_name: prog-funcional-js
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "tail -f /dev/null"
