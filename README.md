@@ -51,7 +51,7 @@ docker compose down
 Depois de abrir no container, você pode rodar com um botão:
 
 1. Abra a aba **Run and Debug** (ícone de play com inseto).
-2. Escolha uma configuração:
+2. Escolha a configuração:
 	- `Rodar arquivo atual (.js)`
 3. Clique no botão **Play** para executar.
 
