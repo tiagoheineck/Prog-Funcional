@@ -1,3 +1,9 @@
+function exemplo() {
+    console.log("Exemplo de função tradicional");
+}
+
+exemplo(); // Exemplo de função tradicional
+
 const a = function(x) {
     return x * 2;
 }
