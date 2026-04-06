@@ -17,13 +17,14 @@ const resumirV1 = (lista) =>
 // V2 (sem filter/map/reduce, com recursao e imutabilidade)
 const filtrarPorValorMinimoV2 = (min) => {
   const aplicar = (lista) => {
-    const processar = ([head, ...tail]) => {
-      if (!head) {
+    // [head, ...tail] é uma forma de desestruturar a lista em primeiro elemento (head) e o restante (tail)
+    const processar = ([head, ...tail]) => { //isso é muito legal, mas cuidado com listas muito grandes para evitar stack overflow
+      if (!head) { 
         return [];
       }
 
-      const restante = processar(tail);
-      return Number(head.valor) >= Number(min) ? [head, ...restante] : restante;
+      const restante = processar(tail); // processa o restante da lista recursivamente
+      return Number(head.valor) >= Number(min) ? [head, ...restante] : restante; // se o head atende a condição, inclui ele no resultado junto com o restante processado, caso contrário, retorna só o restante
     };
 
     return processar(lista);
